@@ -1,0 +1,77 @@
+.body{
+    color: red;
+}
+
+#container-menu {
+    margin-top: -1.5em;
+    margin-left: -1em;
+    display: flex;
+  }
+
+.menu-social ul{
+    background: black;
+}
+
+.menu-social img{
+    width: 100px;
+}
+
+/* variaveis de cor*/
+:root {
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(118, 180, 145);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.menu-navegacao ul {
+    text-align: right;
+    list-style-type: none;
+    padding: 0;
+    width: 900px;
+}
+
+.menu-navegacao ul {
+    background-color: var(--cor-fundo);
+}
+
+.menu-navegacao ul li {
+    display: inline;
+    position: relative;
+}
+
+.menu-navegacao ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.menu-navegacao ul li a:hover {
+    /* background-color: var(--cor-hover); */
+    color:rgb(118, 180, 145)
+}
+
+/*sub menu
+.menu-navegacao ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.menu-navegacao ul li:hover ul {
+    display: block;
+}
+
+.menu-navegacao ul ul {
+    width: 150px
+}
+
+.menu-navegacao ul ul li a {
+    display: block;
+}*/
+
+#container-content{
+    margin-top: 0;
+    border: 1px solid black;
+} 
