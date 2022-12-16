@@ -1,13 +1,18 @@
-.body{
-    color: red;
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Georgia, serif;
 }
 
-#container-menu {
-    margin-top: -1.5em;
-    margin-left: -1em;
-    display: flex;
-  }
 
+
+#container-menu {
+  display: flex;
+  background: blue;
+}
+
+/*
 .menu-social ul{
     background: black;
 }
@@ -18,38 +23,42 @@
 
 /* variaveis de cor*/
 :root {
-    --cor-fundo: rgb(34, 41, 37);
-    --cor-hover: rgb(118, 180, 145);
-    --cor-primaria: rgb(231, 241, 236);
+  --cor-fundo: rgb(34, 41, 37);
+  --cor-hover: rgb(118, 180, 145);
+  --cor-primaria: rgb(231, 241, 236);
 }
 
 .menu-navegacao ul {
-    text-align: right;
-    list-style-type: none;
-    padding: 0;
-    width: 900px;
+  position: fixed;
+  left: 0;
+  top: -1em;
+  width: 100%;
+  padding: 0;
+  text-align: right;
+  list-style-type: none;
+  padding: 0;
 }
 
 .menu-navegacao ul {
-    background-color: var(--cor-fundo);
+  background-color: var(--cor-fundo);
 }
 
 .menu-navegacao ul li {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .menu-navegacao ul li a {
-    color: var(--cor-primaria);
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    transition: background .3s;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: background 0.3s;
 }
 
 .menu-navegacao ul li a:hover {
-    /* background-color: var(--cor-hover); */
-    color:rgb(118, 180, 145)
+  /* background-color: var(--cor-hover); */
+  color: rgb(118, 180, 145);
 }
 
 /*sub menu
@@ -71,7 +80,39 @@
     display: block;
 }*/
 
-#container-content{
-    margin-top: 0;
-    border: 1px solid black;
-} 
+#conteiner-ede{
+    display: flex;
+}
+
+.foto-perfil{
+    margin-top: 100px;
+    margin-left: 10px;
+    max-width:100px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+
+#container-content {
+  margin-top: 100px;
+  width: 40%;
+  margin-left: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#Elementem::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
